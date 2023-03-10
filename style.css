@@ -1,6 +1,6 @@
 .calculator {
-	width: 100%;
-	height:400px;
+	width: 350px;
+	height:480px;
 	
 	margin: auto;
 	padding: 10px;
@@ -12,7 +12,8 @@
 }
 
 .display input {
-	width: 88%;
+	width: 94%;
+	height:59px;
 	padding: 10px;
 	font-size: 24px;
 	text-align: right;
@@ -24,6 +25,7 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 10px;
+	height:380px;
 	
 }
 
