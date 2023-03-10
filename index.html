@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!--MY Facebook Name Sk Abdulla BD Hi Im Abdulla-->
+	<div class="calculator">
+		<div class="display">
+			<input placeholder="0" type="text" id="result" disabled>
+		</div>
+		<div class="buttons">
+			<button class="AC" onclick="clearResult()">AC</button>
+			<button class="closeone" onclick="deleteChar()">&larr;</button>
+			<button class="deaivat" onclick="updateResult('/')">%</button>
+			<button class="into" onclick="updateResult('*')">x</button>
+			<button class="saven" onclick="updateResult('7')">7</button>
+			<button class="ait" onclick="updateResult('8')">8</button>
+			<button class="nine" onclick="updateResult('9')">9</button>
+			<button class="maines"onclick="updateResult('-')">-</button>
+			<button class="fore" onclick="updateResult('4')">4</button>
+			<button class="five" onclick="updateResult('5')">5</button>
+			<button class="six" onclick="updateResult('6')">6</button>
+			<button class="plass" onclick="updateResult('+')">+</button>
+			<button class="one" onclick="updateResult('1')">1</button>
+			<button class="two" onclick="updateResult('2')">2</button>
+			<button class="three"onclick="updateResult('3')">3</button>
+			<button class="eqal" onclick="evaluateResult()">=</button>
+			<button class="zero" onclick="updateResult('0')">0</button>
+			
+			<button class="zero" onclick="updateResult('00')">00</button>
+			<button class="dot"onclick="updateResult('.')">.</button>
+		</div>
+	</div>
+	<script>
+	let result = document.getElementById('result');
+
+function updateResult(value) {
+    result.value += value;
+}
+
+function clearResult() {
+    result.value = '';
+}
+
+function deleteChar() {
+    result.value = result.value.slice(0, -1);
+}
+
+function evaluateResult() {
+    result.value = eval(result.value);
+}
+
+	
+	</script>
+</body>
+</html>

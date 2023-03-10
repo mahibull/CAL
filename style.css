@@ -1,0 +1,101 @@
+.calculator {
+	width: 200px;
+	
+	margin: auto;
+	padding: 10px;
+	border: 1px solid #ccc;
+}
+
+.display {
+	margin-bottom: 10px;
+}
+
+.display input {
+	width: 88%;
+	padding: 10px;
+	font-size: 24px;
+	text-align: right;
+	border-radius:24px;
+	background:rgb(0, 210, 211, 0.2);
+}
+
+.buttons {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 10px;
+	
+}
+
+button {
+	padding: 10px;
+	font-size: 18px;
+	background-color: #eee;
+	border: none;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: #ccc;
+}
+
+
+/*Plass maines into deivait color 4 button cod*/
+.deaivat{
+	background:orange;
+	color:yellow;
+	border-radius:50%;
+	
+
+}
+.eqal{
+	background:orange;
+	color:yellow;
+	border-radius:50%;
+
+
+}
+.into{
+	background:orange;
+	color:yellow;
+	border-radius:50%;
+
+
+}
+.plass{
+	background:orange;
+	color:yellow;
+	border-radius:50%;
+
+
+}
+.maines{
+	background:orange;
+	color:yellow;
+border-radius:50%;	
+
+
+}
+.AC{
+	background:pink;
+	color:#fff;
+	border-radius:50%;
+	
+}
+
+.one{border-radius:50%;}
+.two{border-radius:50%;}
+.three{border-radius:50%;}
+.fore{border-radius:50%;}
+.five{border-radius:50%;}
+.six{border-radius:50%;}
+.saven{border-radius:50%;}
+.ait{border-radius:50%;}
+.nine{border-radius:50%;}
+.zero{border-radius:50%;}
+.dot{border-radius:50%;}
+.closeone{border-radius:50%;}
+
+::placeholder{
+	color:rgb(83, 92, 104, 0.2);
+}
+
